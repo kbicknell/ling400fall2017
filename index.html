@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Text analytics">
+    <meta name="author" content="Klinton Bicknell">
+
+    <title>Text Analytics [Ling 400 / MSiA 490-20]</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+
+    <!-- My personal styles -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Ling 400 / MSiA 490-20</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#schedule">Schedule</a>
+            </li>
+            <li><a href="#logistics">Logistics</a>
+            </li>
+            <li><a href="#policies">Policies</a>
+            </li>
+            <li><a href="#requirements">Requirements</a>
+            </li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Text analytics</h1>
+        <h2><a href="http://faculty.wcas.northwestern.edu/kbicknell/">Klinton Bicknell</a> /// Fall 2017</h2>
+        <p>Huge amounts of valuable data are stored outside of structured databases as human language: text and speech. This course covers modern techniques to extract useful information from this language data.</p>
+        <p>
+          <a class="btn btn-primary btn-lg" href="#schedule" role="button">Schedule</a>
+          <a class="btn btn-primary btn-lg" href="https://piazza.com/northwestern/fall2017/msia49020/" role="button">Piazza forum</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <section id="schedule" class="col-md-12">
+          <h2>Schedule</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Week</th>
+                <th>Date</th>
+                <th>Topic</th>
+                <th>Reading</th>
+                <th>Materials</th>
+                <th>Assignments</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Sep 21</td>
+                <td>introduction; regular expressions; finite-state automata</td>
+                <td><a href="http://web.stanford.edu/~jurafsky/slp3/2.pdf">SLP3 2.1</a></td>
+                <td></td>
+<!--                <td><a href='dl/ling400_class1a.pdf'>slides 1</a>, <a href='dl/ling400_class1b.pdf'>slides 2</a></td>-->
+                <td>HW0 out</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Sep 28</td>
+                <td>finite-state transducers; text normalization (e.g., tokenization, stemming)</td>
+                <td><a href="http://www.delph-in.net/courses/08/ai/2.pdf">SLP2 2.2&ndash;2.3</a>, <a href="http://nlp.stanford.edu/IR-book/pdf/02voc.pdf">IR 2.1&ndash;2.2</a></td>
+                <td></td>
+<!--                <td><a href='dl/ling400_class2a.pdf'>slides 1</a>, <a href='dl/ling400_class2b.pdf'>slides 2</a>, <a href='dl/ling400_class2c.pdf'>slides 3</a></td>-->
+                <td>HW0 due (Tue), HW1 out</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Oct 5</td>
+                <td><em>n</em>-gram models; frequency analysis; cooccurrence analysis; edit distance; spelling correction; noisy channel models</td>
+                <td><a href="http://web.stanford.edu/~jurafsky/slp3/4.pdf">SLP3 4</a>,
+                <a href="http://web.stanford.edu/~jurafsky/slp3/5.pdf">SLP3 5</a></td>
+                <td></td>
+<!--                <td><a href='dl/ling400_class3a.pdf'>slides 1</a>, <a href='dl/ling400_class3b.pdf'>slides 2</a></td>-->
+                <td></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Oct 12</td>
+                <td>document classification; naive Bayes; logistic regression; sentiment analysis</td>
+                <td><a href="http://web.stanford.edu/~jurafsky/slp3/6.pdf">SLP3 6</a></td>
+                <td></td>
+<!--                <td><a href='dl/ling400_class4a.pdf'>slides 1</a>, <a href='dl/ling400_class4b.pdf'>slides 2</a></td>-->
+                <td>HW1 due</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Oct 19</td>
+                <td>indexing and retrieval; Lucene</td>
+                <td><a href="http://nlp.stanford.edu/IR-book/pdf/01bool.pdf">IR 1</a>, <a href="http://nlp.stanford.edu/IR-book/pdf/06vect.pdf">6</a></td>
+                <td></td>
+<!--                <td><a href='dl/ling400_class5a.pdf'>slides 1</a>, <a href='dl/ling400_class5b.pdf'>slides 2</a>, <a href='dl/ling400_class5c.pdf'>slides 3</a></td>-->
+                <td>HW2 out</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Oct 26</td>
+                <td>similarity and clustering; latent semantic analysis; latent Dirichlet allocation; distributed word representations</td>
+                <td><a href="http://web.stanford.edu/~jurafsky/slp3/15.pdf">SLP3 15</a>, <a href="http://web.stanford.edu/~jurafsky/slp3/16.pdf">SLP3 16</a>, <a href="https://www.cs.princeton.edu/~blei/papers/Blei2012.pdf">Blei (2012)</a></td>
+                <td></td>
+<!--                <td><a href='dl/ling400_class6a.pdf'>slides 1</a>, <a href='dl/ling400_class6b.pdf'>slides 2</a></td>-->
+                <td></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Nov 2</td>
+                <td>part-of-speech tagging; hidden Markov models; Viterbi algorithm; maximum entropy models</td>
+                <td><a href="http://web.stanford.edu/~jurafsky/slp3/9.pdf">SLP3 9</a>, <a href="http://web.stanford.edu/~jurafsky/slp3/10.pdf">SLP3 10</a></td>
+                <td></td>
+<!--                <td><a href='dl/ling400_class7a.pdf'>slides 1</a>, <a href='dl/ling400_class7b.pdf'>slides 2</a></td>-->
+                <td>HW2 due, HW3 out</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Nov 9</td>
+                <td>named entity recognition; relation extraction; advanced maximum entropy models; coreference; formal grammars</td>
+                <td><a href="http://web.stanford.edu/~jurafsky/slp3/21.pdf">SLP3 21</a></td>
+                <td></td>
+<!--                <td><a href='dl/ling400_class8a.pdf'>slides 1</a>, <a href='dl/ling400_class8b.pdf'>slides 2</a>, <a href='dl/ling400_class8c.pdf'>slides 3</a>, <a href='dl/ling400_class8d.pdf'>slides 4</a></td>-->
+                <td></td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Nov 16</td>
+                <td>syntactic parsing; wrap-up</td>
+                <td></td>
+                <td></td>
+<!--                <td><a href='dl/ling400_class9a.pdf'>slides 1</a>, <a href='dl/ling400_class9b.pdf'>slides 2</a></td>-->
+                <td>HW3 due, HW4 out</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Nov 23</td>
+                <td>Thanksgiving holiday!</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Nov 30</td>
+                <td>speech recognition for automatic transcription</td>
+                <td></td>
+                <td></td>
+<!--                <td><a href='dl/ling400_class10a.pdf'>slides 1</a>, <a href='dl/ling400_class10b.pdf'>slides 2</a></td>-->
+                <td>HW4 due</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div><!-- /row -->
+      <div class="row">
+        <section id="logistics" class="col-md-6">
+          <h2>Logistics</h2>
+          <h3>Course</h3>
+          <dl class="dl-horizontal">
+            <dt>Time</dt>
+            <dd>Thursdays 1&ndash;4</dd>
+
+            <dt>Location</dt>
+            <dd><a href="http://maps.northwestern.edu/facility/649">North Campus Garage</a>, Padula Room 1430</dd>
+
+            <dt>Textbooks<dt>
+            <dd>There is no required textbook, but the following are good references we will be drawing from in this course.
+              <ul>
+                <li>[SLP2] <em><a href="http://www.cs.colorado.edu/~martin/slp.html">Speech and language processing, Second Edition</a></em> (2009) by Jurafsky &amp; Martin</li>
+                <li>[SLP3] <em><a href="http://web.stanford.edu/~jurafsky/slp3/">Speech and language processing, Third Edition Draft</a></em> (In progress) by Jurafsky &amp; Martin (<em>free <a href="http://web.stanford.edu/~jurafsky/slp3/">online</a></em>)</li>
+                <li>[NLTK] <em><a href="http://www.nltk.org/book_1ed/">Natural language processing with Python</a></em> (2009) by Bird, Klein, &amp; Loper (<em>free <a href="http://www.nltk.org/book_1ed/">online</a></em>)</li>
+                <li>[IR] <em><a href="http://nlp.stanford.edu/IR-book/">Introduction to information retrieval</a></em> (2008) by Manning, Raghavan, &amp; Schütze (<em>free <a href="http://nlp.stanford.edu/IR-book/">online</a></em>)</li>
+                <li>[SA] <a href="http://www.cs.cornell.edu/home/llee/omsa/omsa.pdf">Opinion mining and sentiment analysis</a> (2008) by Pang &amp; Lee, in <em>Foundations and Trends in Information Retrieval</em> (<em>free <a href="http://www.cs.cornell.edu/home/llee/omsa/omsa.pdf">online</a></em>)</li>
+              </ul>
+            </dd>
+
+            <dt>Website</dt>
+            <dd><a href="http://www.klintonbicknell.com/ling400fall2017">www.klintonbicknell.com/ling400fall2017</a>
+            </dd>
+          </dl>
+
+          <h3>Instructors</h3>
+          <dl class="dl-horizontal">
+            <dt>Instructor</dt>
+            <dd><a href="http://www.klintonbicknell.com">Klinton Bicknell</a>
+            </dd>
+
+            <dt>Teaching assistant</dt>
+            <dd><a href="mailto:alexandros.nathan@northwestern.edu">Alexandros Nathan</a>
+            </dd>
+
+            <dt>TA office hours</dt>
+            <dd>TBA</dd>
+            
+            <dt>Instructor office hours</dt>
+            <dd>Thursdays 12&ndash;1, <a href="http://maps.northwestern.edu/facility/649">North Campus Garage</a>, Office 1421</dd>
+          </dl>
+        </section>
+        <section id="policies" class="col-md-6">
+          <h2>Policies</h2>
+          <dl class="dl-horizontal">
+            <dt>Email</dt>
+            <dd>Questions that are not personal should be posted on the <a href="https://piazza.com/northwestern/fall2017/msia49020/">Piazza forum</a> (where they can be posted anonymously if desired). To contact the TA or instructor directly, coming to office hours is encouraged. For questions that are personal, students can email the <a href="mailto:alexandros.nathan@northwestern.edu">TA</a> or <a href="mailto:kbicknell@northwestern.edu">instructor</a>.</dd>
+
+            <dt>Description</dt>
+            <dd>This course will explore techniques to analyze unstructured text such as that found in emails, text messages, conversation transcripts, web pages, books, scientific journals, etc. The course strives to offer a balance between breadth and depth, presenting both an overview of the field as well as some insight into the mathematical underpinning of a few representative techniques.</dd>
+
+            <dt>Academic integrity</dt>
+            <dd>Violations of academic integrity will be referred to the Dean’s office, per WCAS policies. Sanctions can be quite severe, including suspension or permanent expulsion from the university. For details and discussion of how to avoid plagiarism, see <a href="http://www.weinberg.northwestern.edu/handbook/integrity/">the Academic Integrity section</a> of the WCAS undergraduate handbook.</dd>
+          </dl>
+        </section>
+      </div><!-- /row -->
+      <div class="row">
+        <section id="requirements" class="col-md-12">
+          <h2>Requirements</h2>
+          <dl class="dl-horizontal">
+            <dt>Course Grade</dt>
+            <dd>
+              <ul class="list-unstyled">
+                <li>75% homeworks (4)</li>
+                <li>25% participation</li>
+              </ul>
+            </dd>
+
+            <dt>Homeworks</dt>
+            <dd>There will be four homework assignments throughout the quarter. These assignments will involve a combination of programming and short answer responses. The first three assignments should be done individually. The final assignment, which is more involved, must be done in pairs. Homework must be handed in through <a href="https://canvas.northwestern.edu">Canvas</a>.</dd>
+
+            <dt>Participation</dt>
+            <dd>A substantial portion of the grade is based on participation, both in class (including regular attendance) and on the Piazza forum.</dd>
+
+            <dt>Keeping up</dt>
+            <dd>The syllabus (topics, assignments, due dates) may change. These changes will be announced in class, via Piazza, and on the course website. It is students' responsibility to keep up with them.</dd>
+
+            <dt>Deadlines</dt>
+            <dd>All assignments are posted on a Friday, and will generally be due on a Friday at 5pm (unless otherwise specified). Students will have 3 late days that can be used without penalty at any time in the quarter. (Weekend days count half.) These 3 can be distributed in any way: for one assignment three days late, for three assignments each 1 day late, or for one assignment 1 day late and one assignment 2 days late. After the 3 late days are used up, late work will only be accepted in extraordinary circumstances. Common occurrences such as exams in other classes or computer problems are not extraordinary. (In the event of actual extraordinary circumstances which will cause you have trouble meeting a deadline, please contact the instructor as early as possible.) To avoid such problems, it's recommended that students start on all assignments soon after they're available.</dd>
+
+            <dt>AccessibleNU</dt>
+            <dd>Any student requesting accommodations related to a disability or other condition is required to register with <a href="http://www.northwestern.edu/accessiblenu/">AccessibleNU</a> (<a href="mailto:accessiblenu@northwestern.edu">accessiblenu@northwestern.edu</a>; 847-467-5530) and provide professors with an accommodation notification from AccessibleNU, preferably within the first two weeks of class. All information will remain confidential.</dd>
+          </dl>
+        </section>
+      </div><!-- /row -->
+
+      <hr>
+
+      <footer>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
