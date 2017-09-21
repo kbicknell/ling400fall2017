@@ -1,0 +1,18 @@
+---
+title: 'MSiA 490-20 / Ling 400: Homework 0'
+author: "Instructor: Klinton Bicknell"
+output:
+  html_document:
+    highlight: pygments
+---
+
+For this assignment, we're going to generate some interesting text that we'll later analyze. Specifically, you'll each write a brief biography of yourself. Include things such as:
+
+* where you're from
+* what brought you to your current graduate program (e.g., MSiA)?
+* what did you do before this program?
+* when did you become interested in text analytics?
+* what are your plans for the future?
+* whatever else you want to include!
+
+Aim for something like 300--600 words.
